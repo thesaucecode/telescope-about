@@ -1,0 +1,78 @@
+<template name="aboutButton">
+  <a id="about" class="btn header-submodule btn-primary" href="/about">{{_ "about"}}</a>
+</template>
+
+<template name="about">
+  <div class="about-page">
+  <h2>Welcome to Product Hoist!</h2>
+  <p>
+  Product Hoist is a place to discover innovative Australian products! It’s a community for product creators to get feedback, learn from their users and generally help each other out. It’s place for investors to discover the next big thing. It’s a showcase of Australian innovation to the world.
+  </p>
+  <p>
+  We believe that Australia is on the verge of an ideas renaissance. Over the next 30 years, as the mining boom draws to a close, the people that can turn great ideas into viable products will become Australia’s most important resource.
+  </p>
+  <p>
+  Product Hoist is inspired by <a href="http://producthunt.com">Product Hunt</a>, Ryan Hoover and his team have done a phenomenal job building one of the most interesting and supportive communities on the internet. We’re aiming to build a similar community for Australia.
+  </p>
+
+  <h3>What kind of products will I find here?</h3>
+  <p>
+  We’re interested in new and innovative products created by Australians whether they be digital or physical, for profit or social good or both, crowdfunded or pre-launch. We want to discover the best products Australia has to offer and promote them to the world.
+  </p>
+  <p>
+  When people post a product, we ask them to provide:
+  </p>
+  <ul>
+    <li><b>Link</b> directly to the products web page (i.e. no news articles, blog posts etc) </li>
+    <li><b>Name</b> of product </li>
+    <li><b>Tagline</b> short, catchy description of the product.</li>
+  </ul>
+  <p>
+  Once a product is submitted, it’s queued up for review. We moderate for quality and don’t accept all products.
+  </p>
+  
+  <h3>How can I get involved?</h3>
+  <p>
+  Anyone can view the latest and most popular Australian products as discovered and voted by our community. 
+  </p>
+  <p>
+  By <a href="/register">registering</a> with your Twitter, Facebook or email account you’ll be able to vote for your favourite products and help them rise to the top. However, you will not be able to comment or post products straight away.
+  </p>
+  
+  <h3>Why can’t I comment or post products immediately?</h3>
+  <p>
+  We want to build a thoughtful, engaged and supportive community for product creators, which means that unfortunately we can’t open Product Hoist up to everyone straight away – Damn trolls! 
+  </p>
+  <p>
+  Instead, we are slowly releasing invites to people we know and providing them with invites that they can send to people they know – this way we can build a community through trusted referrals and make Product Hoist a wonderful community to be involved in!
+  </p>
+  <p>
+  The best way to get an invitation is to sign-up and start voting on your favourite products. We’ll send you an email when your invitation is ready. If you’re really keen to get involved, that’s awesome! Shoot us a quick email to hello[at]producthoist.com.au and we’ll get onto it.
+  </p>
+  
+  <h3>What if a product I built is featured on Product Hoist and I want to join the conversation?</h3>
+  <p>
+  We would be thrilled if you joined the conversation! In fact we are so committed to having creators join the conversation that more than likely, we already tried to contact you and invite you to join. If not just send us an email to <a href="mailto:hello@producthoist.com.au">hello@producthoist.com.au</a> and let us know who you are.
+  </p>
+  <p>
+  Once you're in, we’d love it if you introduced yourself [comment on the post featuring your product] and offered to answer questions or asked the community for specific feedback on your product – the more actively engaged you are, the more support, attention and appreciation you are likely to get from our community. Once you’ve joined the conversation, we’ll add a ‘founders’ tag to the post so the community knows you’re involved.
+  </p>
+  
+  <h3>Who built Product Hoist</h3>
+  <p>
+  Product Hoist is a collaboration between <a href="http://thesocialdeck.com">The Social Deck</a> and <a href="http://thesauceco.de">thesauceco.de</a>.
+  </p>
+  <p>
+  <a href="http://thesocialdeck.com">The Social Deck</a> is a social marketing company focused on engaging people in ideas and actions that make a positive difference to communities, the environment and individuals. The Social Deck also runs <a href="http://ideashoist.com.au">Ideas Hoist</a> where we’ve interviewed over 150 Australians making ideas happen. 
+  </p>
+  <p>
+  <a href="http://thesauceco.de">Thesauceco.de</a> is a small dev agency focused on agile web and app development.  Their first project was <a href="http://shakeandpay.com">shakeandpay</a>, an app for splitting bills easily with groups of friends, followed by <a href="http://bottelio.com">Bottelio</a>, an innovative platform to help users find their favourite liquor on sale at a bottle store nearby.
+  </p>
+  <p>
+  Product Hoist was built on Meteor using Sacha Greif’s <b>awesome</b>, <a href="http://www.telesc.pe">open source Telescope framework</a>.
+  </p>
+  {{#unless currentUser}}
+    {{> atForm state='signUp'}}
+  {{/unless}}
+  </div>
+</template>
